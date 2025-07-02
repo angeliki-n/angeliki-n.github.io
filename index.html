@@ -4,8 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Architecture Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: #ff4c4c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #7e3ff2; /* Purple */
+      transition: width 0.3s ease;
+    }
+
+    .section-title:hover::after {
+      width: 100%;
+    }
+
+    .project {
+      margin-bottom: 2em;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1em 0;
+      border-radius: 8px;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background: #7e3ff2;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 0.5em;
+    }
+
+    .project a:hover {
+      background: #5e2dbf;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Your Name</h1>
@@ -17,26 +112,39 @@
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an architect passionate about sustainable design, urban resilience, and Nature-Based Solutions.</p>
+    <h2 class="section-title">About Me</h2>
+    <p>I’m an architect passionate about sustainable design, urban resilience, and Nature-Based Solutions. I combine creative vision with research-based approaches to craft resilient urban environments.</p>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
+
     <div class="project">
       <h3>Green Roof Atlas</h3>
-      <img src="images/green-roof.jpg" alt="Green roof project" />
-      <p>Typological exploration of rooftop-based NBS in Athens.</p>
-      <a href="https://example.com" target="_blank">View project</a>
+      <img src="https://via.placeholder.com/800x400?text=Green+Roof+Project" alt="Green Roof Atlas" />
+      <p>A visual and spatial catalogue of rooftop-based Nature-Based Solutions in Athens. Explores typologies, stormwater retention capacity, and implementation potential.</p>
+      <a href="#">View Project</a>
     </div>
 
-    <!-- Add more projects here -->
+    <div class="project">
+      <h3>Microscopy Interpolation Model</h3>
+      <img src="https://via.placeholder.com/800x400?text=Microscopy+Model" alt="Microscopy Interpolation" />
+      <p>Deep learning model for microscopy image interpolation using a modified RIFE architecture and custom Laplacian loss functions.</p>
+      <a href="#">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Stormwater in Exarcheia</h3>
+      <img src="https://via.placeholder.com/800x400?text=Stormwater+Case+Study" alt="Stormwater in Exarcheia" />
+      <p>A typological and spatial study of micro-scale stormwater management strategies in the Athenian neighborhood of Exarcheia.</p>
+      <a href="#">Read More</a>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2 class="section-title">Contact</h2>
     <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
   </section>
 
   <footer>
