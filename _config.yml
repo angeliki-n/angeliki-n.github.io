@@ -1,20 +1,8 @@
-remote_theme: "mmistakes/so-simple-theme"
-title: "Angeliki Nikoloudaki"
-description: "Architect & Urban Ecologist"
-url: "https://angeliki-n.github.io"
-baseurl: ""
+remote_theme: mmistakes/so-simple-theme
+title: Angeliki Nikoloudaki
+description: Architecture Portfolio
+url: "https://angeliki-n.github.io" # use your actual GitHub Pages URL
+baseurl: "" # leave empty unless your site is in a subfolder
 
 plugins:
   - jekyll-remote-theme
-
-# Disable blog and sidebar profile
-show_excerpts: false
-paginate: false
-author_profile: false
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      custom_css: "/assets/css/custom.css"
