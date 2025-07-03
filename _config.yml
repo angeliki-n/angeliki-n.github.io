@@ -11,3 +11,10 @@ plugins:
 show_excerpts: false
 paginate: false
 author_profile: false
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      custom_css: "/assets/css/custom.css"
